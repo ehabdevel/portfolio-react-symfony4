@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="headtitle">Portfolio</h1>
+            <div class="subheader">
+                <p>React Symfony 4, website</p>
+            </div>
+        </header>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <footer class="footer">
+            <p>Developed by <a href="https://ehabdevel.github.io/">Ehab Ashour</a></p>
+        </footer>
+    </body>
+</html>
